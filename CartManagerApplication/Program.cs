@@ -1,10 +1,14 @@
-﻿namespace CartManagerApplication
+﻿using CartManagerApplication.Solutions.level1;
+
+namespace CartManagerApplication
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Solutions.level1.Solution1.run();
+            Solution1 sol1 = new Solution1();
+            sol1.run();
+            sol1.save();
         }
     }
 }

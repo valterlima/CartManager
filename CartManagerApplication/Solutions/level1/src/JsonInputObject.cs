@@ -2,7 +2,7 @@
 
 namespace CartManagerApplication.Solutions.level1.src
 {
-    class JsonInputObject
+    public class JsonInputObject
     {
         public List<Article> articles { get; set; }
         public List<Cart> carts { get; set; }

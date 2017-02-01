@@ -60,15 +60,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Exercices\Backend\level1\data.json" />
-    <None Include="Exercices\Backend\level1\output.json" />
-    <None Include="Exercices\Backend\level1\README.md" />
-    <None Include="Exercices\Backend\level2\data.json" />
-    <None Include="Exercices\Backend\level2\output.json" />
-    <None Include="Exercices\Backend\level2\README.md" />
-    <None Include="Exercices\Backend\level3\data.json" />
-    <None Include="Exercices\Backend\level3\output.json" />
-    <None Include="Exercices\Backend\level3\README.md" />
+    <None Include="Exercises\Backend\level1\data.json" />
+    <None Include="Exercises\Backend\level1\output.json" />
+    <None Include="Exercises\Backend\level1\README.md" />
+    <None Include="Exercises\Backend\level2\data.json" />
+    <None Include="Exercises\Backend\level2\output.json" />
+    <None Include="Exercises\Backend\level2\README.md" />
+    <None Include="Exercises\Backend\level3\data.json" />
+    <None Include="Exercises\Backend\level3\output.json" />
+    <None Include="Exercises\Backend\level3\README.md" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

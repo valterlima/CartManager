@@ -1,9 +1,8 @@
 ﻿namespace CartManagerApplication.Solutions.level1.src
 {
-    public class Article
+    public class CartItemOutput
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public int price { get; set; }
+        public int total { get; set; }
     }
 }

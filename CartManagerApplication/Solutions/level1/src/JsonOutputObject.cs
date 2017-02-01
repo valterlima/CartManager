@@ -2,8 +2,8 @@
 
 namespace CartManagerApplication.Solutions.level1.src
 {
-    class JsonOutputObject
+    public class JsonOutputObject
     {
-        public List<object> carts = new List<object>();
+        public List<CartItemOutput> carts = new List<CartItemOutput>();
     }
 }

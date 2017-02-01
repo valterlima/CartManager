@@ -2,15 +2,22 @@
 
 namespace CartManagerApplication.Solutions.level1
 {
-    class Solution1
+    public class Solution1
     {
-        public static void run()
+        JSONManager manager;
+
+        public JsonInputObject input { get; set; }
+        public JsonOutputObject output { get; set; }
+
+        public Solution1()
         {
-            JSONManager manager = new JSONManager();
-            JsonInputObject input = manager.LoadJSON("level1");
+            manager = new JSONManager();
+            input = manager.LoadJSON("level1");
+            output = new JsonOutputObject();
+        }
 
-            JsonOutputObject output = new JsonOutputObject();
-
+        public void run()
+        {
             foreach (Cart cart in input.carts)
             {
                 int total = 0;
@@ -20,14 +27,17 @@ namespace CartManagerApplication.Solutions.level1
                 }
 
                 output.carts.Add(
-                    new
+                    new CartItemOutput
                     {
                         id = cart.id,
                         total = total
                     }
                 );
             }
+        }
 
+        public void save()
+        {
             manager.WriteJSON(output);
         }
 

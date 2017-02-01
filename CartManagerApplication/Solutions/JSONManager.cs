@@ -5,7 +5,7 @@ using System.IO;
 
 namespace CartManagerApplication.Solutions
 {
-    class JSONManager
+    public class JSONManager
     {
         private JsonInputObject input;
 
@@ -13,7 +13,7 @@ namespace CartManagerApplication.Solutions
         {
             using (StreamReader r = new StreamReader(
                 string.Format(
-                    @"C:\Users\Valter\documents\visual studio 2015\Projects\CartManagerApplication\CartManagerApplication\Exercices\Backend\{0}\data.json", 
+                    @"C:\Users\Valter\documents\visual studio 2015\Projects\CartManagerApplication\CartManagerApplication\Exercises\Backend\{0}\data.json", 
                     level)))
             {
                 string json = r.ReadToEnd();
@@ -31,6 +31,34 @@ namespace CartManagerApplication.Solutions
                 serializer.Serialize(writer, output);
             }
 
+        }
+
+        public JsonOutputObject LoadExpectedOutput(string level = "level1")
+        {
+            JsonOutputObject expectedOutput = new JsonOutputObject();
+            using (StreamReader r = new StreamReader(
+                string.Format(
+                    @"C:\Users\Valter\documents\visual studio 2015\Projects\CartManagerApplication\CartManagerApplication\Exercises\Backend\{0}\output.json",
+                    level)))
+            {
+                string json = r.ReadToEnd();
+                expectedOutput = JsonConvert.DeserializeObject<JsonOutputObject>(json);
+            }
+            return expectedOutput;
+        }
+
+        public JsonOutputObject LoadActualOutput(string level = "level1")
+        {
+            JsonOutputObject expectedOutput = new JsonOutputObject();
+            using (StreamReader r = new StreamReader(
+                string.Format(
+                    "{0}.output.json",
+                    level)))
+            {
+                string json = r.ReadToEnd();
+                expectedOutput = JsonConvert.DeserializeObject<JsonOutputObject>(json);
+            }
+            return expectedOutput;
         }
     }
 }
