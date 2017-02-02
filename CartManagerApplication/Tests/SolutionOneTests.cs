@@ -1,5 +1,4 @@
-﻿using CartManagerApplication.Solutions.level1;
-using CartManagerApplication.Solutions.level1.src;
+﻿using CartManagerApplication.src.level1;
 using NUnit.Framework;
 
 namespace CartManagerApplication

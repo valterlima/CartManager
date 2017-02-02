@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CartManagerApplication.Solutions.level2.src
+namespace CartManagerApplication.src.level3
 {
     public class JsonOutputObject
     {

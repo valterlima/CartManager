@@ -53,15 +53,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Solutions\level1\Solution1.cs" />
-    <Compile Include="Solutions\level1\src\JsonOutputObject.cs" />
-    <Compile Include="Solutions\level1\src\JsonInputObject.cs" />
-    <Compile Include="Solutions\level2\Solution2.cs" />
-    <Compile Include="Solutions\level2\src\JsonInputObject.cs" />
-    <Compile Include="Solutions\level2\src\JsonOutputObject.cs" />
-    <Compile Include="Solutions\level3\Solution3.cs" />
-    <Compile Include="Solutions\level3\src\JsonInputObject.cs" />
-    <Compile Include="Solutions\level3\src\JsonOutputObject.cs" />
+    <Compile Include="src\level1\Solution1.cs" />
+    <Compile Include="src\level1\JsonOutputObject.cs" />
+    <Compile Include="src\level1\JsonInputObject.cs" />
+    <Compile Include="src\level2\Solution2.cs" />
+    <Compile Include="src\level2\JsonInputObject.cs" />
+    <Compile Include="src\level2\JsonOutputObject.cs" />
+    <Compile Include="src\level3\Solution3.cs" />
+    <Compile Include="src\level3\JsonInputObject.cs" />
+    <Compile Include="src\level3\JsonOutputObject.cs" />
     <Compile Include="Tests\SolutionOneTests.cs" />
     <Compile Include="Tests\SolutionThreeTests.cs" />
     <Compile Include="Tests\SolutionTwoTests.cs" />

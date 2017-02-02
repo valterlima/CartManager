@@ -1,5 +1,4 @@
-﻿using CartManagerApplication.Solutions.level2;
-using CartManagerApplication.Solutions.level2.src;
+﻿using CartManagerApplication.src.level2;
 using NUnit.Framework;
 using System.Collections.Generic;
 
@@ -8,6 +7,10 @@ namespace CartManagerApplication
     [TestFixture]
     public class SolutionTwoTests
     {
+        [SetUp]
+        protected void SetUp()
+        {
+        }
         // Testing if the generated output.json matches the expected output.json
         [Test]
         public void SolutionTwo_CompareResultsWithExpected()

@@ -1,9 +1,8 @@
-﻿using CartManagerApplication.Solutions.level1.src;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.IO;
 
-namespace CartManagerApplication.Solutions.level1
+namespace CartManagerApplication.src.level1
 {
     public class Solution1
     {

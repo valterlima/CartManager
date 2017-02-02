@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CartManagerApplication.Solutions.level1.src
+namespace CartManagerApplication.src.level1
 {
     public class JsonInputObject
     {

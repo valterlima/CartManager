@@ -1,18 +1,17 @@
-﻿using CartManagerApplication.Solutions.level3.src;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.IO;
 
-namespace CartManagerApplication.Solutions.level3
+namespace CartManagerApplication.src.level2
 {
-    public class Solution3
+    public class Solution2
     {
-        public string level = "level3";
+        public string level = "level2";
 
         public JsonInputObject input { get; set; }
         public JsonOutputObject output { get; set; }
 
-        public Solution3()
+        public Solution2()
         {
             this.input = this.LoadJSON();
             this.output = new JsonOutputObject();
@@ -24,14 +23,13 @@ namespace CartManagerApplication.Solutions.level3
             {
                 cart.articles = input.articles;
                 cart.delivery_fees = input.delivery_fees;
-                cart.discounts = input.discounts;
 
                 int total = cart.getItemTotals();
-
+                
                 cart.sub_total = total;
 
                 cart.delivery_fee = cart.getDeliveryFee(cart.sub_total);
-                
+
                 output.carts.Add(
                     new CartItemOutput
                     {
@@ -45,6 +43,7 @@ namespace CartManagerApplication.Solutions.level3
 
         public JsonInputObject LoadJSON()
         {
+
             string s = AppDomain.CurrentDomain.BaseDirectory;
             var path = Path.Combine(s, "Exercises/Backend/", this.level, "data.json");
 
@@ -74,7 +73,6 @@ namespace CartManagerApplication.Solutions.level3
 
         public JsonOutputObject LoadExpectedOutput()
         {
-
             JsonOutputObject expectedOutput = new JsonOutputObject();
             string s = AppDomain.CurrentDomain.BaseDirectory;
             string path = Path.Combine(s, "Exercises", "Backend", this.level, "output.json");

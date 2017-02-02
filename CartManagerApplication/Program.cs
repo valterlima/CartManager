@@ -1,6 +1,6 @@
-﻿using CartManagerApplication.Solutions.level1;
-using CartManagerApplication.Solutions.level2;
-using CartManagerApplication.Solutions.level3;
+﻿using CartManagerApplication.src.level1;
+using CartManagerApplication.src.level2;
+using CartManagerApplication.src.level3;
 
 namespace CartManagerApplication
 {

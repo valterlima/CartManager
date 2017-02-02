@@ -1,5 +1,4 @@
-﻿using CartManagerApplication.Solutions.level3;
-using CartManagerApplication.Solutions.level3.src;
+﻿using CartManagerApplication.src.level3;
 using NUnit.Framework;
 
 namespace CartManagerApplication
@@ -7,6 +6,11 @@ namespace CartManagerApplication
     [TestFixture]
     public class SolutionThreeTests
     {
+        [SetUp]
+        protected void SetUp()
+        {
+        }
+
         // Testing if the generated output.json matches the expected output.json
         [Test]
         public void SolutionThree_CompareResultsWithExpected()
