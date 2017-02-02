@@ -20,23 +20,14 @@ namespace CartManagerApplication.Solutions.level2
         {
             foreach (Cart cart in input.carts)
             {
-                int total = 0;
-                foreach (CartItem item in cart.items)
-                {
-                    total += input.getArticleById(item.article_id).price * item.quantity;
-                }
+                cart.articles = input.articles;
+                cart.delivery_fees = input.delivery_fees;
+
+                int total = cart.getItemTotals();
+                
                 cart.sub_total = total;
 
-                int delivery_fee = 0;
-                foreach (DeliveryFee fee in input.delivery_fees)
-                {
-                    if (total >= fee.eligible_transaction_volume.min_price 
-                        && (total < fee.eligible_transaction_volume.max_price || fee.eligible_transaction_volume.max_price == null))
-                    {
-                        delivery_fee = fee.price;
-                    }
-                }
-                cart.delivery_fee = delivery_fee;
+                cart.delivery_fee = cart.getDeliveryFee(cart.sub_total);
 
                 output.carts.Add(
                     new CartItemOutput

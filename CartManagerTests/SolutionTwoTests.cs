@@ -47,7 +47,7 @@ namespace CartManagerTests
         }
 
         // Test for the correct delivery fees
-        [TestMethod]
+        /*[TestMethod]
         public void VerifyDeliveryFees()
         {
             Solution2 sol2 = new Solution2();
@@ -58,8 +58,13 @@ namespace CartManagerTests
 
             foreach (Cart inputCart in input.carts)
             {
-
+                foreach(DeliveryFee del in input.delivery_fees)
+                {
+                    int sub_total = inputCart.sub_total
+                    if (sub_total 
+                }
+                
             }
-        }
+        }*/
     }
 }
