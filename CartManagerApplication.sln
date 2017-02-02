@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManagerApplication", "CartManagerApplication\CartManagerApplication.csproj", "{E18D06EE-5CBF-488C-8995-1C1647200621}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManager", "CartManagerApplication\CartManager.csproj", "{E18D06EE-5CBF-488C-8995-1C1647200621}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManagerTests", "CartManagerTests\CartManagerTests.csproj", "{35F8A2E0-3E44-421B-A448-2EFF44733B7D}"
 EndProject

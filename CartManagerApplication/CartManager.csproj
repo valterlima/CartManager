@@ -49,24 +49,30 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Solutions\JSONManager.cs" />
+    <Compile Include="Solutions\level2\JSONManager.cs" />
+    <Compile Include="Solutions\level1\JSONManager.cs" />
     <Compile Include="Solutions\level1\Solution1.cs" />
-    <Compile Include="Solutions\level1\src\Article.cs" />
-    <Compile Include="Solutions\level1\src\Cart.cs" />
-    <Compile Include="Solutions\level1\src\CartItem.cs" />
-    <Compile Include="Solutions\level1\src\CartItemOutput.cs" />
     <Compile Include="Solutions\level1\src\JsonOutputObject.cs" />
     <Compile Include="Solutions\level1\src\JsonInputObject.cs" />
+    <Compile Include="Solutions\level2\Solution2.cs" />
+    <Compile Include="Solutions\level2\src\JsonInputObject.cs" />
+    <Compile Include="Solutions\level2\src\JsonOutputObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Exercises\Backend\level1\data.json" />
+    <None Include="Exercises\Backend\level1\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Exercises\Backend\level1\output.json" />
     <None Include="Exercises\Backend\level1\README.md" />
-    <None Include="Exercises\Backend\level2\data.json" />
+    <None Include="Exercises\Backend\level2\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Exercises\Backend\level2\output.json" />
     <None Include="Exercises\Backend\level2\README.md" />
-    <None Include="Exercises\Backend\level3\data.json" />
+    <None Include="Exercises\Backend\level3\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Exercises\Backend\level3\output.json" />
     <None Include="Exercises\Backend\level3\README.md" />
     <None Include="packages.config" />

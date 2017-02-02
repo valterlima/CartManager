@@ -1,17 +1,17 @@
-﻿using CartManagerApplication.Solutions.level1.src;
+﻿using CartManagerApplication.Solutions.level2.src;
 
-namespace CartManagerApplication.Solutions.level1
+namespace CartManagerApplication.Solutions.level2
 {
-    public class Solution1
+    public class Solution2
     {
         public JSONManager manager;
 
         public JsonInputObject input { get; set; }
         public JsonOutputObject output { get; set; }
 
-        public Solution1()
+        public Solution2()
         {
-            manager = new JSONManager("level1");
+            manager = new JSONManager("level2");
             input = manager.LoadJSON();
             output = new JsonOutputObject();
         }
@@ -25,12 +25,24 @@ namespace CartManagerApplication.Solutions.level1
                 {
                     total += input.getArticleById(item.article_id).price * item.quantity;
                 }
+                cart.sub_total = total;
+
+                int delivery_fee = 0;
+                foreach (DeliveryFee fee in input.delivery_fees)
+                {
+                    if (total >= fee.eligible_transaction_volume.min_price 
+                        && (total < fee.eligible_transaction_volume.max_price || fee.eligible_transaction_volume.max_price == null))
+                    {
+                        delivery_fee = fee.price;
+                    }
+                }
+                cart.delivery_fee = delivery_fee;
 
                 output.carts.Add(
                     new CartItemOutput
                     {
                         id = cart.id,
-                        total = total
+                        total = cart.getTotals()
                     }
                 );
             }

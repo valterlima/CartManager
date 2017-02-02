@@ -50,14 +50,38 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SolutionTwoTests.cs" />
+    <Compile Include="SolutionOneTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CartManagerApplication\CartManagerApplication.csproj">
+    <ProjectReference Include="..\CartManagerApplication\CartManager.csproj">
       <Project>{e18d06ee-5cbf-488c-8995-1c1647200621}</Project>
-      <Name>CartManagerApplication</Name>
+      <Name>CartManager</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exercises\Backend\level1\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level1\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level1\README.md" />
+    <None Include="Exercises\Backend\level2\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level2\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level2\README.md" />
+    <None Include="Exercises\Backend\level3\data.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level3\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level3\README.md" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
