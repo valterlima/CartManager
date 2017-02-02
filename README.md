@@ -6,10 +6,8 @@ Some exercises with a cart with JSON and C#
 
 # Dependencies
 The nuget packages included are:
-* Newtonsoft.Json
-* NUnit
-* NUnit.Console
-* NUnit.ConsoleRunner
+* [Newtonsoft.Json](http://www.newtonsoft.com/json) v9.0.1
+* [NUnit, NUnit.Console and NUnit.ConsoleRunner](https://www.nunit.org/) v3.6.0
 
 # How to build
 1. `MsBuild.exe .\CartManagerApplication.sln /t:Build /p:Configuration=Release /p:TargetFramework=v4.6.1`
