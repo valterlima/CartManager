@@ -15,7 +15,7 @@ namespace CartManagerTests
             sol3.run();
             
             JsonOutputObject actualJsonOutput = sol3.output;
-            JsonOutputObject expectedJsonOutput = sol3.manager.LoadExpectedOutput();
+            JsonOutputObject expectedJsonOutput = sol3.LoadExpectedOutput();
             
 
             for(int i = 0; i < actualJsonOutput.carts.Count; i++)
