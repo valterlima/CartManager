@@ -1,15 +1,15 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CartManagerApplication.Solutions.level3;
+﻿using CartManagerApplication.Solutions.level3;
 using CartManagerApplication.Solutions.level3.src;
+using NUnit.Framework;
 
-namespace CartManagerTests
+namespace CartManagerApplication
 {
-    [TestClass]
+    [TestFixture]
     public class SolutionThreeTests
     {
         // Testing if the generated output.json matches the expected output.json
-        [TestMethod]
-        public void CompareResultsWithExpected()
+        [Test]
+        public void SolutionThree_CompareResultsWithExpected()
         {
             Solution3 sol3 = new Solution3();
             sol3.run();
@@ -27,8 +27,8 @@ namespace CartManagerTests
         }
 
         // All cart ids from data.json must be in the resulting output.json, and no more than these
-        [TestMethod]
-        public void VerifyAllCartIds()
+        [Test]
+        public void SolutionThree_VerifyAllCartIds()
         {
             Solution3 sol3 = new Solution3();
             sol3.run();

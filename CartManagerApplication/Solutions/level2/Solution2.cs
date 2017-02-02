@@ -1,5 +1,6 @@
 ﻿using CartManagerApplication.Solutions.level2.src;
 using Newtonsoft.Json;
+using System;
 using System.IO;
 
 namespace CartManagerApplication.Solutions.level2
@@ -43,7 +44,9 @@ namespace CartManagerApplication.Solutions.level2
 
         public JsonInputObject LoadJSON()
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), string.Format("Exercises/Backend/{0}/data.json", this.level));
+
+            string s = AppDomain.CurrentDomain.BaseDirectory;
+            var path = Path.Combine(s, "Exercises/Backend/", this.level, "data.json");
 
             using (StreamReader r = new StreamReader(path))
             {
@@ -54,9 +57,12 @@ namespace CartManagerApplication.Solutions.level2
 
         public void WriteJSON()
         {
-            System.IO.Directory.CreateDirectory(string.Format("results/{0}", this.level));
             JsonSerializer serializer = new JsonSerializer();
-            var path = Path.Combine(Directory.GetCurrentDirectory(), string.Format("results/{0}/output.json", this.level));
+
+            string s = AppDomain.CurrentDomain.BaseDirectory;
+            string path = Path.Combine(s, "results", this.level);
+            System.IO.Directory.CreateDirectory(path);
+            path = Path.Combine(path, "output.json");
 
             using (StreamWriter sw = new StreamWriter(path))
             using (JsonWriter writer = new JsonTextWriter(sw))
@@ -69,7 +75,8 @@ namespace CartManagerApplication.Solutions.level2
         public JsonOutputObject LoadExpectedOutput()
         {
             JsonOutputObject expectedOutput = new JsonOutputObject();
-            var path = Path.Combine(Directory.GetCurrentDirectory(), string.Format("Exercises/Backend/{0}/output.json", this.level));
+            string s = AppDomain.CurrentDomain.BaseDirectory;
+            string path = Path.Combine(s, "Exercises", "Backend", this.level, "output.json");
 
             using (StreamReader r = new StreamReader(path))
             {
@@ -82,7 +89,8 @@ namespace CartManagerApplication.Solutions.level2
         public JsonOutputObject LoadActualOutput()
         {
             JsonOutputObject expectedOutput = new JsonOutputObject();
-            var path = Path.Combine(Directory.GetCurrentDirectory(), string.Format("results/{0}/output.json", this.level));
+            string s = AppDomain.CurrentDomain.BaseDirectory;
+            string path = Path.Combine(s, "results", this.level, "output.json");
 
             using (StreamReader r = new StreamReader(path))
             {

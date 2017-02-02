@@ -1,16 +1,16 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CartManagerApplication.Solutions.level2;
+﻿using CartManagerApplication.Solutions.level2;
 using CartManagerApplication.Solutions.level2.src;
+using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace CartManagerTests
+namespace CartManagerApplication
 {
-    [TestClass]
+    [TestFixture]
     public class SolutionTwoTests
     {
         // Testing if the generated output.json matches the expected output.json
-        [TestMethod]
-        public void CompareResultsWithExpected()
+        [Test]
+        public void SolutionTwo_CompareResultsWithExpected()
         {
             Solution2 sol2 = new Solution2();
             sol2.run();
@@ -28,8 +28,8 @@ namespace CartManagerTests
         }
 
         // All cart ids from data.json must be in the resulting output.json, and no more than these
-        [TestMethod]
-        public void VerifyAllCartIds()
+        [Test]
+        public void SolutionTwo_VerifyAllCartIds()
         {
             Solution2 sol2 = new Solution2();
             sol2.run();
@@ -48,8 +48,8 @@ namespace CartManagerTests
         }
 
         // Test for the correct delivery fees
-        [TestMethod]
-        public void VerifyDeliveryFees()
+        [Test]
+        public void SolutionTwo_VerifyDeliveryFees()
         {
             Solution2 sol2 = new Solution2();
 

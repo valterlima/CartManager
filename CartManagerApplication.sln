@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManager", "CartManagerApplication\CartManager.csproj", "{E18D06EE-5CBF-488C-8995-1C1647200621}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManagerTests", "CartManagerTests\CartManagerTests.csproj", "{35F8A2E0-3E44-421B-A448-2EFF44733B7D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{E18D06EE-5CBF-488C-8995-1C1647200621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E18D06EE-5CBF-488C-8995-1C1647200621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E18D06EE-5CBF-488C-8995-1C1647200621}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35F8A2E0-3E44-421B-A448-2EFF44733B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35F8A2E0-3E44-421B-A448-2EFF44733B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35F8A2E0-3E44-421B-A448-2EFF44733B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35F8A2E0-3E44-421B-A448-2EFF44733B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

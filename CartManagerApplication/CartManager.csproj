@@ -37,6 +37,10 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,25 +62,43 @@
     <Compile Include="Solutions\level3\Solution3.cs" />
     <Compile Include="Solutions\level3\src\JsonInputObject.cs" />
     <Compile Include="Solutions\level3\src\JsonOutputObject.cs" />
+    <Compile Include="Tests\SolutionOneTests.cs" />
+    <Compile Include="Tests\SolutionThreeTests.cs" />
+    <Compile Include="Tests\SolutionTwoTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Exercises\Backend\level1\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level1\output.json" />
-    <None Include="Exercises\Backend\level1\README.md" />
+    <None Include="Exercises\Backend\level1\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level1\README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Exercises\Backend\level2\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level2\output.json" />
-    <None Include="Exercises\Backend\level2\README.md" />
+    <None Include="Exercises\Backend\level2\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level2\README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Exercises\Backend\level3\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level3\output.json" />
-    <None Include="Exercises\Backend\level3\README.md" />
+    <None Include="Exercises\Backend\level3\output.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Exercises\Backend\level3\README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
