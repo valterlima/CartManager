@@ -22,7 +22,7 @@ To build you only need **MsBuild** from the .NET Framework
 ## How to test
 Run **NUNIT3-CONSOLE** on the assembly **CartManagerApplication.exe**
 
-1. `.\packages\NUnit.ConsoleRunner.3.6.0\tools\nunit3-console.exe .\CartManagerApplication\bin\Debug\CartManagerApplication.exe`
+1. `.\packages\NUnit.ConsoleRunner.3.6.0\tools\nunit3-console.exe .\CartManagerApplication\bin\Release\CartManagerApplication.exe`
 
 The resulting test report will be available on **TestResult.xml**
 
