@@ -94,9 +94,13 @@ namespace CartManagerApplication
             
             JsonOutputObject result = sol2.output;
 
-            Assert.AreEqual(result.carts.Find(x => x.id == cart1_id).total, 1500);
-            Assert.AreEqual(result.carts.Find(x => x.id == cart2_id).total, 1500);
-            Assert.AreEqual(result.carts.Find(x => x.id == cart3_id).total, 2000);
+            int cart1_total_expected = 1500;
+            int cart2_total_expected = 1500;
+            int cart3_total_expected = 2000;
+
+            Assert.AreEqual(result.carts.Find(x => x.id == cart1_id).total, cart1_total_expected);
+            Assert.AreEqual(result.carts.Find(x => x.id == cart2_id).total, cart2_total_expected);
+            Assert.AreEqual(result.carts.Find(x => x.id == cart3_id).total, cart3_total_expected);
 
         }
     }

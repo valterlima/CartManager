@@ -62,40 +62,42 @@
     <Compile Include="src\level3\Solution3.cs" />
     <Compile Include="src\level3\JsonInputObject.cs" />
     <Compile Include="src\level3\JsonOutputObject.cs" />
-    <Compile Include="Tests\SolutionOneTests.cs" />
-    <Compile Include="Tests\SolutionThreeTests.cs" />
-    <Compile Include="Tests\SolutionTwoTests.cs" />
+    <Compile Include="tests\SolutionOneTests.cs" />
+    <Compile Include="tests\SolutionThreeTests.cs" />
+    <Compile Include="tests\SolutionTwoTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Exercises\Backend\level1\data.json">
+    <None Include="exercises\Backend\level1\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level1\output.json">
+    <None Include="exercises\Backend\level1\output.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level1\README.md">
+    <None Include="exercises\Backend\level1\README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level2\data.json">
+    <None Include="exercises\Backend\level2\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level2\output.json">
+    <None Include="exercises\Backend\level2\output.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level2\README.md">
+    <None Include="exercises\Backend\level2\README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level3\data.json">
+    <None Include="exercises\Backend\level3\data.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level3\output.json">
+    <None Include="exercises\Backend\level3\output.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Exercises\Backend\level3\README.md">
+    <None Include="exercises\Backend\level3\README.md">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
