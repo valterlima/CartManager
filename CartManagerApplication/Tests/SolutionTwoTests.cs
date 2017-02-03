@@ -74,12 +74,17 @@ namespace CartManagerApplication
             items3.Add(new CartItem(1, 0));
             items3.Add(new CartItem(2, 10));
 
+            List<CartItem> items4 = new List<CartItem>();
+            items4.Add(new CartItem(1, 0));
+
             int cart1_id = 1;
             int cart2_id = 2;
             int cart3_id = 3;
+            int cart4_id = 4;
             carts.Add(new Cart(cart1_id, items1));
             carts.Add(new Cart(cart2_id, items2));
             carts.Add(new Cart(cart3_id, items3));
+            carts.Add(new Cart(cart4_id, items4));
 
             List<DeliveryFee> delivery_fees = new List<DeliveryFee>();
             int delivery_price1 = 1000;
@@ -97,10 +102,12 @@ namespace CartManagerApplication
             int cart1_total_expected = 1500;
             int cart2_total_expected = 1500;
             int cart3_total_expected = 2000;
+            int cart4_total_expected = 1000;
 
             Assert.AreEqual(result.carts.Find(x => x.id == cart1_id).total, cart1_total_expected);
             Assert.AreEqual(result.carts.Find(x => x.id == cart2_id).total, cart2_total_expected);
             Assert.AreEqual(result.carts.Find(x => x.id == cart3_id).total, cart3_total_expected);
+            Assert.AreEqual(result.carts.Find(x => x.id == cart4_id).total, cart4_total_expected);
 
         }
     }
