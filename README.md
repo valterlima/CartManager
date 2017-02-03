@@ -2,12 +2,17 @@
 Some exercises with a cart with JSON and C#
 
 # Requirements
+* [NuGet](https://www.nuget.org/)
 * [.NET Framework v4.6.1](https://www.microsoft.com/pt-br/download/details.aspx?id=49982)
 
 # Dependencies
 The nuget packages included are:
 * [Newtonsoft.Json](http://www.newtonsoft.com/json) v9.0.1
 * [NUnit, NUnit.Console and NUnit.ConsoleRunner](https://www.nunit.org/) v3.6.0
+
+Download and install packages with NuGet: 
+
+1. `nuget restore`
 
 # How to build
 To build you only need **MsBuild** from the .NET Framework
