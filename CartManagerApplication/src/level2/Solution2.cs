@@ -57,6 +57,7 @@ namespace CartManagerApplication.src.level2
         public void WriteJSON()
         {
             JsonSerializer serializer = new JsonSerializer();
+            serializer.Formatting = Formatting.Indented;
 
             string s = AppDomain.CurrentDomain.BaseDirectory;
             string path = Path.Combine(s, "results", this.level);
